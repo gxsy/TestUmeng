@@ -1,19 +1,20 @@
 {
-	"name": "TestUmeng",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
+  "name": "TestUmeng",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "eslint --ext .jsx,.js --fix ./src"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.46.3"
-	},
-	"devDependencies": {
+  },
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.3",
+    "react-navigation": "^1.0.0-beta.11"
+  },
+  "devDependencies": {
     "babel-eslint": "^7.2.3",
-		"babel-jest": "20.0.3",
+    "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
     "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
@@ -21,11 +22,11 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		 "preset": "react-native",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native",
     "collectCoverage": true,
     "coverageDirectory": "__coverage__",
     "setupFiles": [
@@ -39,5 +40,5 @@
       "node_modules/(?!react-native|react-navigation)"
     ],
     "verbose": true
-	}
+  }
 }
