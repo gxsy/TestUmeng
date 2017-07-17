@@ -1,6 +1,7 @@
 package com.testumeng;
 
 import com.facebook.react.ReactActivity;
+import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +13,5 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "TestUmeng";
     }
+    
 }
