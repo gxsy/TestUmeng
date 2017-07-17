@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, NativeModules } from 'react-native';
+import { View, Button } from 'react-native';
 import PropTypes from 'prop-types';
 
 
@@ -21,15 +21,6 @@ class TestPage2 extends Component {
     super(props);
     this.state = {};
   }
-
-  componentDidMount() {
-    NativeModules.UmengAnalytics.beginLogPageView('TestPage2');
-  }
-
-  componentWillUnmount() {
-    NativeModules.UmengAnalytics.endLogPageView('TestPage2');
-  }
-
 
   render() {
     const { navigate } = this.props.navigation;

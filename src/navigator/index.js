@@ -1,8 +1,6 @@
-import { Platform, NativeModules } from 'react-native';
+import { Platform } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import * as screens from '../screens';
-
-NativeModules.UmengAnalytics.setDebugMode();
 
 const AppNavigator = StackNavigator(
   {
