@@ -48,8 +48,8 @@ public class UmengAnalyticsModule extends ReactContextBaseJavaModule {
         MobclickAgent.enableEncrypt(value);
     }
     @ReactMethod
-    public void setDebugMode(Boolean value) {
-        MobclickAgent.setDebugMode(value);
+    public void setDebugMode() {
+        MobclickAgent.setDebugMode(true);
     }
 
 }
