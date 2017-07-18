@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Button } from 'react-native';
 import PropTypes from 'prop-types';
-
+import UmengNativeModule from '../native_module/umeng';
 
 class Home extends Component {
 
@@ -20,6 +20,14 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  componentWillMount() {
+    UmengNativeModule.onPageBegin('test Home page');
+  }
+
+  componentWillUnmount() {
+    UmengNativeModule.onPageEnd('test Home page');
   }
 
   render() {
